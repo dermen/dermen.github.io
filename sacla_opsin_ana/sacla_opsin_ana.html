@@ -1,0 +1,1509 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>output</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<style type="text/css">
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	-webkit-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	-moz-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	max-height: 30em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-ms-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	-webkit-box-shadow: 0px 13px 8px #979797;
+	-moz-box-shadow: 0px 13px 8px #979797;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].line-numbers {
+	padding-left: 0;
+}
+
+pre[class*="language-"].line-numbers code {
+	padding-left: 3.8em;
+}
+
+pre[class*="language-"].line-numbers .line-numbers-rows {
+	left: 0;
+}
+
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line] {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+pre[data-line] code {
+	position: relative;
+	padding-left: 4em;
+}
+pre .line-highlight {
+	margin-top: 0;
+}
+</style>
+</head>
+<body>
+<h2 id="toc_0">SACLA: time-resolved opsin scattering data analysis</h2>
+
+<h3 id="toc_1">Table of Contents</h3>
+
+<ol>
+<li><a href="#data">Get the data</a></li>
+<li><a href="#tma">Time-tool analysis and data merging</a></li>
+<li><a href="#radpro">Radial profile dark subtraction</a></li>
+<li><a href="#diffpro">Difference profile time-analysis</a></li>
+</ol>
+
+<p><a name="data"></a></p>
+
+<h2 id="toc_2">Get the data</h2>
+
+<p>The data for this particular SACLA run can be found <a href="https://drive.google.com/a/asu.edu/file/d/1WkFT2WAwgi8YpnyWuI1PJgADBlyQh8ej/view?usp=sharing">here</a>. Email damende3@asu.edu if you cannot download!</p>
+
+<p><a name="tma"></a></p>
+
+<h2 id="toc_3">Time-tool analysis and data merging</h2>
+
+<p>In this notebook we detail how to analyze the time-tool data.</p>
+
+<p>The SACLA time tool reads out a precise delay time per FEL exposure, and we can use this to precisely observe changes in the scattering in time.</p>
+
+<p>A paper on the SACLA time-tool calibration is found <a href="http://scripts.iucr.org/cgi-bin/paper?S1600577517016654">here</a>.</p>
+
+<pre><code class="language-python">%matplotlib inline
+
+import glob
+from collections import Counter
+
+import h5py
+import pandas
+import numpy as np
+
+import pylab as plt</code></pre>
+
+<pre><code class="language-python">run = 656748
+h5 = h5py.File(&#39;r%d/radials.h5&#39;%run, &#39;r&#39;)
+print( h5.keys())</code></pre>
+
+<pre><code>[u&#39;dark&#39;, u&#39;pumped&#39;]</code></pre>
+
+<pre><code class="language-python">print(h5[&quot;pumped&quot;].keys())</code></pre>
+
+<pre><code>[u&#39;Qrads&#39;, u&#39;olaser_delay&#39;, u&#39;olaser_volt&#39;, u&#39;photon_energy&#39;, u&#39;pulse_energy&#39;, u&#39;radials&#39;, u&#39;tag&#39;, u&#39;xlaser_joule_bm_1&#39;, u&#39;xlaser_joule_bm_2&#39;]</code></pre>
+
+<pre><code class="language-python"># nominal delay values
+# Each unit corresponds to roughly 6.6 femtoseconds
+# and time 0 is roughly olaser_delay=0
+delay_vals = h5[&#39;pumped&#39;][&#39;olaser_delay&#39;].value # optical laser delay stage value</code></pre>
+
+<pre><code class="language-python">pumped_tag = h5[&#39;pumped/tag&#39;].value
+order = np.argsort( pumped_tag)
+print pumped_tag.shape, delay_vals.shape
+plt.plot( pumped_tag[order], delay_vals[order], &#39;.&#39;, ms=2)
+# watch how we changed the delay during this run
+# negative stage olser_delay means</code></pre>
+
+<pre><code>(14423,) (14423,)
+
+
+
+
+
+[&lt;matplotlib.lines.Line2D at 0x1161e8510&gt;]</code></pre>
+
+<p><img src="4.png" alt="png"></p>
+
+<pre><code class="language-python"># Now those are the nominal delay values
+
+# We wish to make the time delay more precise by using the 
+# sub picosecond time-tool at SACLA
+
+# This data is in the TMA results.CSV file(s) provided by SACLA
+results = glob.glob(&quot;TMA/*/results.csv&quot;) # there are multiple files for different parts of the experiment</code></pre>
+
+<pre><code class="language-python"># this is the title row in each results.CSV
+cols = &#39;tagNumber,time_of_getting_image[msec/tag],time_of_detection[msec/tag],time_of_writing_to_udb[msec/tag],deriv_edge,fit_edge,memory_used[MB/core]&#39;.split(
+    &#39;,&#39;)
+print(cols)</code></pre>
+
+<pre><code>[&#39;tagNumber&#39;, &#39;time_of_getting_image[msec/tag]&#39;, &#39;time_of_detection[msec/tag]&#39;, &#39;time_of_writing_to_udb[msec/tag]&#39;, &#39;deriv_edge&#39;, &#39;fit_edge&#39;, &#39;memory_used[MB/core]&#39;]</code></pre>
+
+<pre><code class="language-python"># load the data from each results.CSV file and store in a large array
+data = np.vstack(
+        [np.loadtxt(r, skiprows=1, delimiter=&#39;,&#39;) for r in results ])
+</code></pre>
+
+<pre><code class="language-python"># convert the array data to a pandas dataframe
+df = pandas.DataFrame(columns=cols, data=data) # this is the tma data for the entire experiment</code></pre>
+
+<pre><code class="language-python"># lets query the tma data for the particular run 
+
+# first, we find the minimum and maximum tag number in our experimental data h5 file
+tags = np.hstack( (h5[&#39;dark&#39;][&#39;tag&#39;].value, h5[&#39;pumped&#39;][&#39;tag&#39;].value))
+tmin, tmax = tags.min(), tags.max()
+
+# then we query the time-tool dataframe
+df_run = df.query(&quot;tagNumber &gt;= %d and tagNumber &lt;= %d&quot; % (tmin, tmax))
+print (&quot;%d shots in run %s&quot;%(len( df_run), h5.filename) )</code></pre>
+
+<pre><code>20000 shots in run r656748/radials.h5</code></pre>
+
+<pre><code class="language-python"># Now , we should merge this TMA data frame with the experimental data in the hdf5 file
+
+pumped = h5[&#39;pumped&#39;]
+dark = h5[&#39;dark&#39;]
+
+# These are the relevant bits of the files, in particular the energy, radials and tag number
+df_pumped_h5data = pandas.DataFrame({&#39;radials&#39;: list(pumped[&#39;radials&#39;].value),
+                        &#39;tagNumber&#39;: pumped[&#39;tag&#39;].value, # note we keep same name tagNumber as the TMA data for merging
+                        &#39;olaser_delay&#39;: pumped[&#39;olaser_delay&#39;].value,
+                        &#39;pulse_energy&#39;: pumped[&#39;pulse_energy&#39;].value,
+                        &#39;photon_energy&#39;: pumped[&#39;photon_energy&#39;].value,
+                        &#39;olaser_volt&#39;: pumped[&#39;olaser_volt&#39;].value,
+                        &#39;xlaser_joule_bm_1&#39;: pumped[&#39;xlaser_joule_bm_1&#39;].value})
+
+# the dame for the dark data
+df_dark_h5data = pandas.DataFrame({&#39;radials&#39;: list(dark[&#39;radials&#39;].value),
+                        &#39;tagNumber&#39;: dark[&#39;tag&#39;].value, # note we keep same name tagNumber as the TMA data for merging
+                        &#39;olaser_delay&#39;: dark[&#39;olaser_delay&#39;].value,
+                        &#39;pulse_energy&#39;: dark[&#39;pulse_energy&#39;].value,
+                        &#39;photon_energy&#39;: dark[&#39;photon_energy&#39;].value,
+                        &#39;olaser_volt&#39;: dark[&#39;olaser_volt&#39;].value,
+                        &#39;xlaser_joule_bm_1&#39;: dark[&#39;xlaser_joule_bm_1&#39;].value})
+
+#NOTE: we made pumped[radials] a list, this is slightly abusing the pandas philosophy
+# but it is quite convenient because we can keep all the parameters aligned 
+# when we analyze the radials
+
+# NOTE: if radials is left as a numpy array pandas will raise an exception</code></pre>
+
+<pre><code class="language-python"># We can join the pumped and dark dataframes into one
+
+# To do so, we first create a boolean column called pumped
+df_pumped_h5data[&#39;pumped&#39;] = True
+df_dark_h5data[&#39;pumped&#39;] = False
+
+# then we can concatenate
+df_h5 = pandas.concat( (df_pumped_h5data, df_dark_h5data))</code></pre>
+
+<pre><code class="language-python">print (list(df_h5), len(df_h5))</code></pre>
+
+<pre><code>([&#39;olaser_delay&#39;, &#39;olaser_volt&#39;, &#39;photon_energy&#39;, &#39;pulse_energy&#39;, &#39;radials&#39;, &#39;tagNumber&#39;, &#39;xlaser_joule_bm_1&#39;, &#39;pumped&#39;], 19230)</code></pre>
+
+<pre><code class="language-python"># Now we can merge the hdf5 dataframe with the SACLA time tool dataframe
+df_main = pandas.merge(df_run, df_h5, on=&#39;tagNumber&#39;) # NOTE: pandas does an inner merge by default
+print( list(df_main), len( df_main))</code></pre>
+
+<pre><code>([&#39;tagNumber&#39;, &#39;time_of_getting_image[msec/tag]&#39;, &#39;time_of_detection[msec/tag]&#39;, &#39;time_of_writing_to_udb[msec/tag]&#39;, &#39;deriv_edge&#39;, &#39;fit_edge&#39;, &#39;memory_used[MB/core]&#39;, &#39;olaser_delay&#39;, &#39;olaser_volt&#39;, &#39;photon_energy&#39;, &#39;pulse_energy&#39;, &#39;radials&#39;, &#39;xlaser_joule_bm_1&#39;, &#39;pumped&#39;], 19230)</code></pre>
+
+<pre><code class="language-python"># During the experiment, as the optical laser delay stage was translated, 
+# the olaser_delay values being read out changed continuously.
+
+# This was because the time to jump from one delay stage value to another
+# was much longer than the time between shots. 
+
+# Therefore, we need to isolate the fixed values of olaser_delay in order 
+# to query the nominal delay values.
+
+# Usually, if a value is read out 10+ times in a row,  it&#39;s considered a fixed value
+all_olaser_vals = Counter( df_main.olaser_delay.values)
+print (all_olaser_vals.items() )  # (olaser_value, frequency) pairs
+</code></pre>
+
+<pre><code>[(0, 971), (1, 1), (3, 1), (-508, 1), (5, 1), (-502, 1), (11, 1), (-424, 1), (19, 1), (-488, 1), (30, 1), (-681, 1), (43, 1), (-800, 1631), (46, 1), (-464, 1), (57, 1), (-453, 1), (70, 1), (-439, 1), (80, 1), (-427, 1), (88, 2), (94, 1), (-417, 1), (98, 1), (99, 1), (100, 859), (101, 1), (-410, 1), (104, 1), (-404, 1), (110, 1), (-401, 1), (-400, 974), (-201, 1), (-398, 1), (118, 1), (-388, 1), (127, 2), (-383, 1), (-379, 1), (140, 1), (-368, 1), (-630, 1), (410, 1), (154, 1), (-354, 1), (-656, 1), (163, 1), (167, 1), (-340, 1), (-339, 1), (178, 1), (-328, 1), (187, 1), (193, 1), (-318, 1), (197, 1), (198, 1), (199, 1), (200, 1074), (-310, 1), (203, 1), (-305, 1), (208, 1), (-302, 1), (-300, 991), (-298, 1), (215, 1), (-295, 1), (-292, 1), (224, 1), (-799, 1), (-798, 1), (-797, 1), (-794, 1), (-793, 1), (-280, 1), (236, 1), (-787, 2), (-269, 1), (-778, 2), (250, 1), (-256, 1), (-767, 2), (-469, 1), (260, 1), (263, 1), (-244, 1), (-242, 1), (-211, 1), (275, 1), (-229, 1), (284, 1), (-739, 1), (-738, 1), (288, 1), (291, 1), (-219, 1), (296, 1), (299, 1), (300, 958), (301, 1), (-722, 1), (-720, 1), (305, 1), (-205, 1), (-202, 1), (311, 1), (-200, 998), (-199, 1), (314, 1), (-195, 1), (-193, 1), (320, 1), (-288, 1), (-190, 1), (-701, 1), (330, 1), (-181, 1), (338, 1), (-171, 1), (343, 1), (-680, 1), (-112, 1), (-158, 1), (357, 1), (359, 1), (-663, 1), (231, 1), (-144, 1), (370, 1), (-141, 1), (-647, 1), (378, 2), (380, 1), (-131, 1), (387, 1), (388, 1), (-634, 1), (-121, 1), (393, 1), (394, 1), (395, 1), (-702, 1), (398, 2), (399, 1), (400, 3320), (-623, 1), (-754, 2), (-106, 1), (-102, 1), (-101, 1), (-100, 1008), (-99, 1), (-96, 1), (-607, 1), (-603, 1), (-90, 2), (-601, 2), (-600, 984), (-599, 1), (-596, 1), (-82, 1), (432, 1), (-590, 1), (440, 1), (-71, 1), (-582, 1), (446, 1), (449, 1), (450, 5273), (-572, 1), (-59, 1), (-570, 1), (-394, 1), (-559, 1), (-45, 1), (-42, 1), (-545, 1), (-32, 1), (422, 1), (-538, 1), (-21, 1), (-527, 1), (-13, 1), (-1, 1), (-614, 1), (-6, 1), (-2, 1)]</code></pre>
+
+<pre><code class="language-python">good_delays = [k for k, v in all_olaser_vals.items() if v &gt; 10]
+print ( good_delays) # store these numbers for later use in analysis queries</code></pre>
+
+<pre><code>[0, -800, 100, -400, 200, -300, 300, -200, 400, -100, -600, 450]</code></pre>
+
+<pre><code class="language-python"># Above are the nominal delay values that were set during this run
+# (remember, the units correspond to roughly 6.6 picoseconds of delay)
+
+# We can calculate the time-delay per shot using the fit_edge from the time-tool data
+
+# Lets look at the time tool fit_edge position across the run
+df_main.fit_edge.hist(bins=100)</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11aba7390&gt;</code></pre>
+
+<p><img src="0.png" alt="png"></p>
+
+<pre><code class="language-python"># Looks like some outliers near edge positions 1000, so lets give a modest crop to the fit_edge
+df_main = df_main.query(&#39;fit_edge &gt; %d and fit_edge &lt; %d&#39; % (500, 850))
+df_main.fit_edge.hist( bins=100)</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11c61ae50&gt;</code></pre>
+
+<p><img src="1.png" alt="png"></p>
+
+<pre><code class="language-python"># lets watch how this fit_edge is changing in time by sorting according to tagNumber
+plt.plot( df_main.fit_edge[np.argsort(df_main.tagNumber)], &#39;.&#39;, ms=1)</code></pre>
+
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x11ccba3d0&gt;]</code></pre>
+
+<p><img src="2.png" alt="png"></p>
+
+<pre><code class="language-python"># It looks like the fit_edge is pretty uniform across this sun, 
+
+# Therefore, we can assume the average fit_edge is the nominal time delay.
+
+# The correction to the time delay is ~3 femtosecond per fit_edge
+# and arrival timing increases with fit_edge
+df_main[&#39;time_adjust&#39;] = (df_main.fit_edge - df_main.fit_edge.mean()) * 0.003</code></pre>
+
+<pre><code class="language-python"># now , we commpute the per-shot time delay: (olaser_delay unit is roughly 6.6 femtoseconds)
+df_main[&#39;delay_time&#39;] = df_main.olaser_delay * 0.0066 + df_main.time_adjust</code></pre>
+
+<pre><code class="language-python"># lets save this dataframe
+df_main.to_pickle(&quot;run%d_main.pkl&quot;%run)</code></pre>
+
+<pre><code class="language-python"># the dataframe is quite useful
+# e.g. to plot the average pumped radial profile
+plt.plot( df_main.query(&quot;pumped==True&quot;).radials.mean(0) )
+# The next notebook explains how to do detailed analysis</code></pre>
+
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x11ab54410&gt;]</code></pre>
+
+<p><img src="3.png" alt="png"></p>
+
+<p><a name="radpro"></a></p>
+
+<h2 id="toc_4">Radial profile dark subtration</h2>
+
+<p>Here we describe how to subtract dark radial profiles from pumped radial profiles.</p>
+
+<pre><code class="language-python">%matplotlib inline
+import pandas
+import numpy as np
+import pylab as plt
+from IPython.display import clear_output
+from scipy import optimize
+</code></pre>
+
+<pre><code class="language-python"># lets load the dataframe we made in the previous ipython notebook (tma_analysis_sacla.ipynb)
+df = pandas.read_pickle(&quot;run656748_main.pkl&quot;)</code></pre>
+
+<pre><code class="language-python"># We wish to compute difference-radial profiles at different time delays
+
+#The first step is filtering all the profiles 
+# (removing bad shots or shots with outlier parameters)
+
+#We can easily filter shots according to a photon energy bandpass
+#First, however,  we should see the spectrum!
+df.photon_energy.hist(bins=30)</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x12d76ea90&gt;</code></pre>
+
+<p><img src="11.png" alt="png"></p>
+
+<pre><code class="language-python">energy_rng = (9955, 9980)
+df_bandpass = df.query(&quot;%.5f &lt; photon_energy &lt; %.5f&quot;%energy_rng)</code></pre>
+
+<pre><code class="language-python">#Now lets filter according to signal to background level
+
+#We will make a function to do this
+
+def filter_radials( df, 
+    bg_rng,  
+    sig_rng, 
+    thresh=1.3):
+  
+    &quot;&quot;&quot;
+    this filters radials that have a weak signal
+
+    df, pandas dataframe
+    bg_rng, tulple defininig where the background signal is
+    sig_rng, tuple defining where the signal is (e.g. water ring)
+    thresh, only keep radials if signal is greater than background by
+        this fraction
+
+    returns a filtered pandas dataframe
+    &quot;&quot;&quot;
+    
+    assert( bg_rng[1] &gt; bg_rng[0])
+    assert( sig_rng[1] &gt; sig_rng[0])
+
+    # background and signal slices
+    bg_slc = slice( bg_rng[0], bg_rng[1],1)
+    sig_slc = slice( sig_rng[0], sig_rng[1], 1)
+    
+    # load the radial stack
+    rads = np.vstack(df.radials.values)
+    # define the signal  to background levels for each radial profile
+    sig = rads[ :, sig_slc].mean(axis=1)
+    bg = rads[ :, bg_slc].mean(axis=1)
+    lvl = sig/bg
+
+    is_good = lvl &gt; thresh
+    
+    df_good = df.loc[is_good]
+    
+    print(&quot;func `filter_radials`: \
+        \n\tKeeping %d / %d rads&quot;%(sum( is_good), len( df)))
+    
+    df_bad = df.loc[~is_good]
+
+    return df_good, df_bad
+
+</code></pre>
+
+<pre><code class="language-python"># lets plot the average radial to visually check good ranges for background and signal
+plt.plot( df_bandpass.radials.mean(0))
+plt.xlim(150,1000) # zoom into the relvant bits</code></pre>
+
+<pre><code>(150, 1000)</code></pre>
+
+<p><img src="12.png" alt="png"></p>
+
+<pre><code class="language-python"># based on the above plot, we choose regions of interest:
+
+bg_rng = (180,220) # radial pixel values of background
+sig_rng = (510,550) # radial pixel values of signal
+df_kept, df_removed = analyze_radials.filter_radials(df_bandpass, 
+                                                     bg_rng=bg_rng, 
+                                                     sig_rng=sig_rng, 
+                                                     thresh=1.2)</code></pre>
+
+<pre><code>func `filter_radials`:         
+    Keeping 6030 / 13851 rads</code></pre>
+
+<pre><code class="language-python"># lets plot the filtered and removed profiles to compare
+plt.plot( df_kept.radials.mean(0), label=&#39;kept&#39;)
+plt.plot( df_removed.radials.mean(0), label=&#39;removed&#39;)
+plt.legend()</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x11b8e84d0&gt;</code></pre>
+
+<p><img src="13.png" alt="png"></p>
+
+<pre><code class="language-python"># now it is a good idea to start doing the pumped and dark difference profiles
+# To do this , first gather the darks
+df_dark = df_kept.query(&quot;pumped==False&quot;)
+
+# We are interested in computing difference profiles at various time delays
+# We can find pumped profiles at a given time delay using a basic query:
+df_pumped_2ps = df_kept.query(&quot;1.75 &lt; delay_time &lt; 2.25 &quot;).query(&quot;pumped==True&quot;)</code></pre>
+
+<pre><code class="language-python"># lets plot the 2ps pumped and dark profiles
+plt.plot( df_pumped_2ps.radials.mean(0), label=&quot;pumped&quot;)
+plt.plot( df_dark.radials.mean(0), label=&quot;dark&quot;)
+plt.xlim(150,1000) # zoom into the relvant bits
+plt.ylim(250,950)
+plt.legend()</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x11fa9ae50&gt;</code></pre>
+
+<p><img src="14.png" alt="png"></p>
+
+<pre><code class="language-python"># note how they appear to differ in scale
+# This could be due to intensity fluctutions or jet fluctuations, its hard to say for sure
+
+# We can just look at the dark shots that were measured
+# around the same time as the pumped shots:
+tagmin, tagmax = df_pumped_2ps.tagNumber.min(), df_pumped_2ps.tagNumber.max()
+df_dark_concurrent = df_dark.query( &quot;%d &lt; tagNumber &lt; %d&quot;%(tagmin, tagmax))
+
+# and plot
+plt.plot( df_pumped_2ps.radials.mean(0), label=&quot;pumped&quot;)
+plt.plot( df_dark_concurrent.radials.mean(0), label=&quot;dark&quot;)
+plt.xlim(150,1000) # zoom into the relvant bits
+plt.ylim(250,950)
+plt.legend()</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x11f892d90&gt;</code></pre>
+
+<p><img src="5.png" alt="png"></p>
+
+<pre><code class="language-python"># Note, they are still off slightly.. 
+# It could be the pumped profiles have more signal in general 
+# , however it could be other factors which are unaccounted for
+
+# We can get more fancy with the subtraction... 
+
+#####################################
+# Lets run SVD on all the dark vectors
+# and then use (for differencing) linear 
+# fits of those most prominant singular
+# vectors to each individual pumped profile 
+####################################
+
+# Here we do the singular decomp:
+    
+dark_stack = np.vstack(df_dark.radials.values)
+U,s,VT = np.linalg.svd( dark_stack.T, full_matrices=False)
+
+# two most prominant dark singular vectors 
+v0 = U[:,0]*s[0]
+v1 = U[:,1]*s[1]
+vecs = [v0,v1]
+
+# we can plot the singular values to check prominance
+plt.plot( s, &#39;o&#39;)
+plt.gca().set_yscale(&quot;log&quot;)</code></pre>
+
+<p><img src="6.png" alt="png"></p>
+
+<pre><code class="language-python"># looks like 2-sh dominant components, hence why we only kept two
+
+# We wish to fit a linear combination of the vectors to each pumped profile
+
+# We can fit the linear combination, but we need a good initial condition
+
+# Lets let the initial condition be the average right singular vectors
+c0 = VT[0].mean()
+c1 = VT[1].mean()
+
+# Here is a plot of the residual of the SVD reconstruction 
+# to the original dark vector
+# using our guessed coefficients
+plt.plot(df_dark.radials.mean(0) - v0*c0 -v1*c1 )
+
+# Note this residual is on top of roughly 1000 y-axis units
+</code></pre>
+
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x11fc0d350&gt;]</code></pre>
+
+<p><img src="7.png" alt="png"></p>
+
+<pre><code class="language-python"># seems like a good initial guess for our parameters, 
+# as the pumped profiles area actually very close in scale to the darks
+
+# Now lets see what happens if we fit these vecs to a pumped profile
+
+# first we define residual least squares function
+def opt_func(coeffs, vecs, pumped):
+    &quot;&quot;&quot;
+    coeffs, tuple of parameters
+    vecs, the dark sigular vectors [ U[:,0]*s[0], U[:,1]*s[1], ... ]
+    pumped, a pumped radial profile, could be average or individual shot
+    
+    returns the sum of squared residuals
+    &quot;&quot;&quot;
+    linear_comb_of_vecs = _get_linear_comb( coeffs, vecs)
+    resid = pumped - linear_comb_of_vecs
+    return np.sum(resid**2)
+
+def _get_linear_comb(coeffs, vecs):
+    &quot;&quot;&quot;
+    Returns a linear combination of vectors based on params. 
+    
+    coefs must be N+1 long where N is the length
+    of vecs. The extra coef (at the end of the list)
+    is a constant offset to the fit
+    
+    coeffs, same linear coeffs passed to opt_func
+    vecs, same dark_vecs passed to opt_func
+    &quot;&quot;&quot;
+    linear_comb = np.zeros_like(vecs[0])
+    for v,c in zip( vecs, coeffs[:-1] ):
+        linear_comb += v*c
+    linear_comb += coeffs[-1]
+    return linear_comb
+</code></pre>
+
+<pre><code class="language-python"># Now, this is a single shot radial profile
+pumped_radial = df_pumped_2ps.radials.iloc[0]
+
+# lets fit some dark singular vectors to it
+init_params = (c0,c1,coffset)
+fit = optimize.minimize( opt_func, init_params , args=( [v0,v1], pumped_radial  ), method=&#39;Nelder-Mead&#39;)
+dark_fit = _get_linear_comb( fit[&#39;x&#39;], [v0,v1])</code></pre>
+
+<pre><code class="language-python"># lets check out fit
+plt.plot( pumped_radial, &#39;o&#39;, ms=5 ,label=&#39;single shot pumped&#39;)
+plt.plot( dark_fit, lw=3, label=&#39;dark fit&#39;)
+plt.xlim(150,1000)
+plt.ylim(350,1050)
+plt.legend()</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x11f6b6810&gt;</code></pre>
+
+<p><img src="8.png" alt="png"></p>
+
+<pre><code class="language-python"># Now we can apply this to each pumped profile
+# Since we will use this multiple times, lets make a function
+
+def fit_darks_to_pumps(df_pumped, 
+                       x0=(c0,c1,coffset), 
+                       vecs = [v0,v1], 
+                       method=&#39;Nelder-Mead&#39;, 
+                       fun=opt_func):
+
+    &quot;&quot;&quot;
+    Loop over pumped profiles , fitting a dark profile to each one
+    
+    returns a results dictionary with many useful parameters,
+    in perticular the optimized difference profile per shot
+    
+    The lists in the dictionary values are aligned to the dataframe indices
+    &quot;&quot;&quot;
+    results = {}
+    results[&#39;dark_fits&#39;] = []
+    results[&#39;differences&#39;] = []
+    results[&#39;success&#39;] = []
+    results[&#39;residuals&#39;] = []
+
+    for i_pumped, pumped in enumerate(df_pumped.radials):
+
+        if i_pumped %50==0:
+            clear_output(wait=True)
+            print (&quot;Pumped %d/ %d&quot;%(i_pumped+1, len(df_pumped)))
+        
+        dark_fit, fit = _get_dark_fit( pumped, x0,vecs,method,fun)
+
+        results[&#39;dark_fits&#39;].append( dark_fit)
+        results[&#39;residuals&#39;].append( fit[&#39;fun&#39;])
+        results[&#39;success&#39;].append( fit[&#39;success&#39;])
+    
+        results[&#39;differences&#39;].append( pumped - dark_fit)
+    
+    clear_output()
+    print(&quot;Done!\n&quot;)
+    return results
+
+
+def _get_dark_fit(pumped_profile, x0, vecs, method, fun):
+    &quot;&quot;&quot;
+    fit vector combination to a pumped profile
+    
+    returns tuple of (fitted_profile, fit_results)
+    
+    fit_results is the output of the scipy optimize method
+    &quot;&quot;&quot;
+    
+    fit = optimize.minimize(fun=fun, 
+                            x0=x0, 
+                            args=(vecs, pumped_profile),
+                            method=method)
+    
+    dark_fit = _get_linear_comb( fit[&#39;x&#39;], vecs)
+    
+    return dark_fit, fit</code></pre>
+
+<pre><code class="language-python">results = fit_darks_to_pumps(df_pumped_2ps)</code></pre>
+
+<pre><code>Done!</code></pre>
+
+<pre><code class="language-python"># lets compare some various normalizations
+
+# no norm
+plt.plot( df_pumped_2ps.radials.mean(0) - df_dark.radials.mean(0), label=&#39;no normalization&#39;)
+
+# scale by water peak
+pumped_stack = np.vstack( df_pumped_2ps.radials.values)
+dark_stack = np.vstack(df_dark.radials.values)
+
+# normalize the pumped by the water peak
+pumped_water_peak = pumped_stack[:, 510:550].max(1) 
+pumped_stack /= pumped_water_peak[:,None]
+# same for darks
+dark_water_peak = dark_stack[:, 510:550].max(1)
+dark_stack /= dark_water_peak[:,None]
+plt.plot( (pumped_stack.mean(0) - dark_stack.mean(0) )*pumped_water_peak.mean() , label=&quot;simple normalization&quot;)
+
+
+plt.plot( np.mean( results[&#39;differences&#39;],0), label=&quot;SVD norm&quot;)
+plt.legend()
+plt.xlim(50,1050)</code></pre>
+
+<pre><code>(50, 1050)</code></pre>
+
+<p><img src="9.png" alt="png"></p>
+
+<pre><code class="language-python"># looks like the SVD fit works nicely</code></pre>
+
+<pre><code class="language-python"># This is our result for the difference profile
+plt.plot( np.mean( results[&#39;differences&#39;],0))
+plt.xlim(50,1050)
+# this seems reasonable like we expect from previous experiments</code></pre>
+
+<pre><code>(50, 1050)</code></pre>
+
+<p><img src="10.png" alt="png"></p>
+
+<pre><code class="language-python"># Lets make a difference profile for each pumped profile in the run
+df_all_pumped = df_kept.query(&quot;pumped==True&quot;).copy()
+
+results = fit_darks_to_pumps( df_all_pumped)
+
+# this might take a minute!</code></pre>
+
+<pre><code>Done!</code></pre>
+
+<pre><code class="language-python"># At this point, we should create a new dataframe that has all
+# of the difference profiles stored in it
+
+# That way, we can begin analyzing how the difference is changing with delay time
+
+df_all_pumped[&#39;differences&#39;] = results[&#39;differences&#39;]
+df_all_pumped[&#39;residuals&#39;] = results[&#39;residuals&#39;]
+df_all_pumped[&#39;dark_fits&#39;] = results[&#39;dark_fits&#39;]
+df_all_pumped[&#39;success&#39;] = results[&#39;success&#39;]
+
+df_all_pumped.to_pickle(&quot;run656748_all_pumped.pkl&quot;)
+</code></pre>
+
+<p><a name="diffpro"></a></p>
+
+<h2 id="toc_5">Difference profile time-analysis</h2>
+
+<p>Now that we have 1) computed the precise time-delay per shot, and 2) computed the proper dark-subtraction per shot, we can analyze the difference profiles in time. </p>
+
+<pre><code class="language-python"># in the previous notebook we optimized a method for fitting dark 
+# profiles to each pumped profile, in order to effectively
+# obtain the difference scattering.
+
+# Now, we can analyze how that difference scattering is changing with
+# optical laser timing (time delay)
+
+
+# Remember, this run we are analyzing represents opsin scattering, 
+# and in theory opsin is a  photo-inactive protein, so any changes 
+# we observe in the difference scattering should indicate solvent
+# heating effects and other experimental factors
+
+%matplotlib inline
+
+import pandas
+import numpy as np
+import pylab as plt</code></pre>
+
+<pre><code class="language-python"># Lets load the dataframe we created in the last notebook
+
+# This dataframe has difference profiles in it!
+df = pandas.read_pickle(&quot;run656748_all_pumped.pkl&quot;)
+print( list(df), len(df) )</code></pre>
+
+<pre><code>([&#39;tagNumber&#39;, &#39;time_of_getting_image[msec/tag]&#39;, &#39;time_of_detection[msec/tag]&#39;, &#39;time_of_writing_to_udb[msec/tag]&#39;, &#39;deriv_edge&#39;, &#39;fit_edge&#39;, &#39;memory_used[MB/core]&#39;, &#39;olaser_delay&#39;, &#39;olaser_volt&#39;, &#39;photon_energy&#39;, &#39;pulse_energy&#39;, &#39;radials&#39;, &#39;xlaser_joule_bm_1&#39;, &#39;pumped&#39;, &#39;time_adjust&#39;, &#39;delay_time&#39;, &#39;differences&#39;, &#39;residuals&#39;, &#39;dark_fits&#39;, &#39;success&#39;], 4501)</code></pre>
+
+<pre><code class="language-python"># We stored some fit parameters, lets check how many times the fit failed
+print(&quot;%d / %d successful fits&quot;%( np.sum(df.success),len(df)))
+
+# every fit report indicated a success, however maybe its not a good indication of 
+# a good fit</code></pre>
+
+<pre><code>4501 / 4501 successful fits</code></pre>
+
+<pre><code class="language-python"># Lets check the fit residuals
+
+# We have to define log-spaced bins because the values vary across many orders
+# of magnitude
+bins = np.logspace( np.log10(df.residuals.min()), np.log10(df.residuals.max()), 100 )
+df.residuals.hist(bins=bins, log=True)
+plt.gca().set_xscale(&#39;log&#39;)</code></pre>
+
+<p><img src="25.png" alt="png"></p>
+
+<pre><code class="language-python"># Lets only keep bins that are bound by 1e4 &lt; residual &lt; 1e5
+def filter_bad(df, column, lower, upper):
+    values = df[column].values
+    is_good = np.logical_and( lower &lt; values, values &lt; upper)
+    df_good = df.loc[is_good]
+    df_bad = df.loc[~is_good]
+    return df_good, df_bad
+
+</code></pre>
+
+<pre><code class="language-python">df_good, df_bad = filter_bad(df, &#39;residuals&#39;, 1e4, 1e5)
+df_good.residuals.hist(bins=100)
+# lets do a little more trimming</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x128efa450&gt;</code></pre>
+
+<p><img src="26.png" alt="png"></p>
+
+<pre><code class="language-python">df_good, df_bad = filter_bad( df,&#39;residuals&#39;, 2e4, 7e4)
+df_good.residuals.hist(bins=100)
+print(&quot;removed %d / %d profiles&quot;%(len(df_bad), len(df)))</code></pre>
+
+<pre><code>removed 65 / 4501 profiles</code></pre>
+
+<p><img src="27.png" alt="png"></p>
+
+<pre><code class="language-python"># Lets investigate what the bad difference profiles look like
+plt.plot( df_good.differences.mean(0), label=&#39;good&#39;)
+plt.plot( df_bad.differences.mean(0), label=&#39;bad&#39;)
+plt.legend()
+# Its a good thing we filtered
+
+# Note the reason we know this is because the average difference profile
+# looks as we would expect from typical water heating</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x12b77a910&gt;</code></pre>
+
+<p><img src="28.png" alt="png"></p>
+
+<pre><code class="language-python"># Now, lets define some time bins:
+tbins = np.linspace( -0.5, 3, 25)
+times_x = tbins[1:]*.5 + tbins[:-1]*.5
+delta_t = tbins[1] - tbins[0]
+shots_per_tbin = [ len( df_good.query(&quot; %.4f &lt; delay_time &lt;= %.4f&quot;%(t,t+delta_t))) for t in tbins[:-1] ]
+
+
+# Note, different &quot;time bins&quot; have different number of measurements
+plt.bar( times_x, shots_per_tbin, width=.9*delta_t)
+plt.xlabel(&quot;delay time&quot;)
+plt.ylabel(&quot;Total number of measured shots&quot;)</code></pre>
+
+<pre><code>Text(0,0.5,&#39;Total number of measured shots&#39;)</code></pre>
+
+<p><img src="29.png" alt="png"></p>
+
+<pre><code class="language-python"># We can plot the difference profiles in time:
+
+
+def get_diff_in_tbins(df, tbins):
+
+    times_x = tbins[:-1]*.5 + tbins[1:]*.5
+    delta_t = tbins[1]- tbins[0]
+    diffs = []
+    for t in times_x:
+        t1 = t-delta_t*.5
+        t2 = t+delta_t*.5
+        d_t = df.query(&quot; %.4f &lt; delay_time &lt; %.4f&quot;%(t1,t2))
+        diff = d_t.differences.mean(0)
+        diffs.append( diff)
+    return diffs
+</code></pre>
+
+<pre><code class="language-python">diffs = get_diff_in_tbins( df_good, tbins)
+
+# Lets plot the diffs
+plt.imshow( diffs , aspect=250, vmin=-4, vmax=4, 
+           extent=( 0, len( diff), times_x[-1], times_x[0]),
+          cmap=&#39;gnuplot&#39;)
+plt.xlim(100,1000)
+plt.ylabel(&quot;delay time (ps)&quot;)
+plt.xlabel(&quot;radial pixel value&quot;)
+_=plt.colorbar().ax.set_ylabel(&quot;difference ADU&quot;, rotation=270, labelpad=10)</code></pre>
+
+<p><img src="15.png" alt="png"></p>
+
+<pre><code class="language-python"># From the profiles it is clear that there is some kind of correlation between 
+# number of measured points and amplitude of the difference signal
+
+# Therefore it might be difficult to verify how REAL this signal is
+# e.g. is it a quake due to solvent heating ???
+
+# Lets look at the difference signal oscilation in a different way:
+
+#######################################
+# Lets plot the water heating signal 
+#&quot;peak-to-peak&quot; as a function of delay time
+###########################################
+
+# We should smooth the difference signals first, so we need this filter
+from scipy.signal import savgol_filter
+
+# Lets make a function to do this peak to peak calculation
+def peak_to_peak_diff( diff_signal, 
+        min_roi = slice(400,500,None),
+        max_roi = slice(575,675,None),
+        savgol_window=101, savgol_degree=3, ax=None ):
+    &quot;&quot;&quot;
+    finds the peak to peak distance in the water heating difference signal
+    
+    diff_signal: a difference profile, single shot or average is ok
+    min_roi: region including the minimum peak
+    max_roi: region including the maxium peak
+    savgol_window, savgol_degree: filter parameters, 
+        window size and polynomial degree
+    ax: if provided, the smoother filter and peak positions will be plotted here
+    &quot;&quot;&quot;
+    
+
+    smooth_diff = savgol_filter(diff_signal, savgol_window, savgol_degree)
+    arg_minval = smooth_diff[min_roi].argmin() + min_roi.start
+    arg_maxval = smooth_diff[max_roi].argmax() + max_roi.start
+     
+    minval, maxval = smooth_diff[arg_minval], smooth_diff[ arg_maxval]
+    
+    peak_to_peak = maxval - minval
+    
+    if ax is not None:
+        ax.plot( smooth_diff, )
+        ax.plot( [arg_minval, arg_maxval], [minval, maxval], &#39;ko&#39;, ms=5, mfc=&#39;none&#39;, mew=2 )
+    
+    return peak_to_peak
+
+</code></pre>
+
+<pre><code class="language-python"># make an axis for plotting
+_, ax = plt.subplots(1,1)
+
+# compute the peak to peaks:
+peak_to_peaks = []
+for diff in diffs:
+    p2p = peak_to_peak_diff( diff, ax=ax)
+    peak_to_peaks.append( p2p)
+plt.xlim(100,1000)
+
+# seems like the peak to peaks algorithm is working!</code></pre>
+
+<pre><code>(100, 1000)</code></pre>
+
+<p><img src="16.png" alt="png"></p>
+
+<pre><code class="language-python"># Now lets see what the peak-to-peak values look like in time
+plt.plot( times_x, peak_to_peaks, marker=&#39;o&#39;, lw=2)
+plt.xlabel(&quot;delay timee (ps)&quot;)
+plt.ylabel(&quot;peak-to-peak difference signal&quot;)
+
+# we should investigate whether that signal is real!</code></pre>
+
+<pre><code>Text(0,0.5,&#39;peak-to-peak difference signal&#39;)</code></pre>
+
+<p><img src="17.png" alt="png"></p>
+
+<pre><code class="language-python"># there is clearly some kind of dip that is potentially interesting
+
+# We can divie the data in two and see if the dip persists
+Nrows = len( df_good)
+rows_shuff = np.random.permutation( Nrows)
+
+#rows_shuff[:Nrows]
+df1 = df_good.iloc[rows_shuff[:Nrows/2] ] 
+df2 = df_good.iloc[rows_shuff[Nrows/2:] ] 
+
+diffs1 = get_diff_in_tbins( df1, tbins)
+diffs2 = get_diff_in_tbins(df2, tbins)
+
+peak_to_peaks1 = [ peak_to_peak_diff(d) for d in diffs1 ]
+peak_to_peaks2 = [ peak_to_peak_diff(d) for d in diffs2 ]
+
+plt.plot( times_x, peak_to_peaks1, marker=&#39;o&#39;, ms=8 ,label=&quot;selection 1&quot;)
+plt.plot( times_x, peak_to_peaks2, marker=&#39;&lt;&#39;, ms=8,label=&quot;selection 2&quot;)
+plt.xlabel(&quot;delay timee (ps)&quot;)
+plt.ylabel(&quot;peak-to-peak difference signal&quot;)
+plt.legend()</code></pre>
+
+<pre><code>&lt;matplotlib.legend.Legend at 0x12a816390&gt;</code></pre>
+
+<p><img src="18.png" alt="png"></p>
+
+<pre><code class="language-python"># we can plot error bar:
+error = np.std( [peak_to_peaks1, peak_to_peaks2], 0) / np.sqrt(2)
+signal = np.mean(  [peak_to_peaks1, peak_to_peaks2], 0)
+plt.errorbar( times_x, signal, yerr=error, lw=1,color=&#39;k&#39;,
+            capsize=3, capthick=2,ecolor=&#39;k&#39;,elinewidth=2,
+             marker=&#39;o&#39;, mew=2,mec=&#39;k&#39;, mfc=&#39;none&#39;)
+plt.xlabel(&quot;delay timee (ps)&quot;)
+plt.ylabel(&quot;peak-to-peak difference signal&quot;)</code></pre>
+
+<pre><code>Text(0,0.5,&#39;peak-to-peak difference signal&#39;)</code></pre>
+
+<p><img src="19.png" alt="png"></p>
+
+<pre><code class="language-python">
+##############################
+# BELOW IS A WORK IN PROGRESSS
+##############################</code></pre>
+
+<pre><code class="language-python"># note the precise time-delays per nominal time-delay
+# vary quite a bit:
+
+# e.g.
+df_good.query(&quot;olaser_delay==200&quot;).delay_time.hist(bins=30)
+
+plt.xlabel(&quot;delay time (ps)&quot;)</code></pre>
+
+<pre><code>Text(0.5,0,&#39;delay time (ps)&#39;)</code></pre>
+
+<p><img src="20.png" alt="png"></p>
+
+<pre><code class="language-python"># based on the above, even though the nominal delay was roughly
+# 1.3 ps, we measured delay times +- 500 femtoseconds
+
+# We can use this variation as a control
+
+# It would be interesting , e.g. to see what the 1.9 ps delay values look like
+# when the nominal delay is either 1.6 ps or 2.2 ps.. for example
+
+# They should be equivalent, save any systematic error
+
+# Lets see the shots per time bin as a function of nominal delay
+from collections import Counter
+good_delays = [ k for k,v in Counter( df_good.olaser_delay).items() if v &gt; 10]
+
+
+df_good2 = df_good.loc[df_good.olaser_delay.isin( good_delays), :]
+
+bottom = np.zeros( times_x.shape[0])
+
+colors = {}
+for i_delay, delay in enumerate(good_delays):
+    if delay &lt; 0:
+        continue
+    
+    df_delay = df_good2.query(&quot;olaser_delay==%d&quot;%delay)
+    
+    shots_per_delay,_ = np.histogram( df_delay.delay_time, bins=tbins )
+    
+    color = &quot;C%d&quot;%i_delay
+    plt.bar(times_x, shots_per_delay, 
+            bottom=bottom,color=color ,
+            width=0.9*delta_t, label=&quot;delay=%d&quot;%delay)
+
+    bottom = shots_per_delay
+    
+    colors[delay]=color
+    
+plt.gca().set_xticks(times_x)
+xlabs = np.round( times_x,1)
+plt.gca().set_xticklabels(xlabs)
+plt.gca().tick_params(axis=&#39;x&#39;, rotation=90, length=8, pad=0)
+plt.legend()
+plt.ylabel(&quot;number of shots&quot;)
+plt.xlabel(&quot;delay time (ps)&quot;)</code></pre>
+
+<pre><code>Text(0.5,0,&#39;delay time (ps)&#39;)</code></pre>
+
+<p><img src="21.png" alt="png"></p>
+
+<pre><code class="language-python"># for example it would be interesting to view
+# time delay 2.2 ps when olaser_delay is either 300 or 400
+
+# The results should be similar...
+
+# lets assign a bin ID to the dataframe
+
+tbin_id = np.digitize( df_good2.delay_time, tbins  )
+tbin_label = [xlabs[i-1] if i&gt;0 and i &lt; len( tbins) else np.nan for i in tbin_id]
+df_timelabeled = df_good2.copy()
+df_timelabeled[&#39;tbin_label&#39;] = tbin_label</code></pre>
+
+<pre><code class="language-python">def plot_tbins_overlaps(tbin_label):
+    df_lab = df_timelabeled.query(&quot;tbin_label==%.3f&quot;%tbin_label)
+    for delay in df_lab.olaser_delay.unique():
+        d = df_lab.query(&quot;olaser_delay==%d&quot;%delay)
+        plt.plot( d.differences.mean(0), 
+                label=&quot;delay=%d; %d shots&quot;%(delay, len(d)),
+                color=colors[delay])
+
+    plt.xlim(100,1000)
+    plt.legend()</code></pre>
+
+<pre><code class="language-python">plot_tbins_overlaps(2.2)</code></pre>
+
+<p><img src="22.png" alt="png"></p>
+
+<pre><code class="language-python">plot_tbins_overlaps(1.8)</code></pre>
+
+<p><img src="23.png" alt="png"></p>
+
+<pre><code class="language-python">plot_tbins_overlaps(1)</code></pre>
+
+<p><img src="24.png" alt="png"></p>
+
+<script type="text/javascript">
+self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{};var Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var i=r[e];if(2==arguments.length){a=arguments[1];for(var l in a)a.hasOwnProperty(l)&&(i[l]=a[l]);return i}var s={};for(var o in i)if(i.hasOwnProperty(o)){if(o==n)for(var l in a)a.hasOwnProperty(l)&&(s[l]=a[l]);s[o]=i[o]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=s)}),r[e]=s},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),i=0;a=r[i++];)t.highlightElement(a,e===!0,n)},highlightElement:function(a,r,i){for(var l,s,o=a;o&&!e.test(o.className);)o=o.parentNode;if(o&&(l=(o.className.match(e)||[,""])[1],s=t.languages[l]),a.className=a.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=a.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l),s){var u=a.textContent;if(u){u=u.replace(/^(?:\r?\n|\r)/,"");var g={element:a,language:l,grammar:s,code:u};if(t.hooks.run("before-highlight",g),r&&self.Worker){var c=new Worker(t.filename);c.onmessage=function(e){g.highlightedCode=n.stringify(JSON.parse(e.data),l),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(g.element),t.hooks.run("after-highlight",g)},c.postMessage(JSON.stringify({language:g.language,code:g.code}))}else g.highlightedCode=t.highlight(g.code,g.grammar,g.language),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(a),t.hooks.run("after-highlight",g)}}},highlight:function(e,a,r){var i=t.tokenize(e,a);return n.stringify(t.util.encode(i),r)},tokenize:function(e,n){var a=t.Token,r=[e],i=n.rest;if(i){for(var l in i)n[l]=i[l];delete n.rest}e:for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var s=n[l];s="Array"===t.util.type(s)?s:[s];for(var o=0;o<s.length;++o){var u=s[o],g=u.inside,c=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),N=[p,1];b&&N.push(b);var O=new a(l,g?t.tokenize(m,g):m,h);N.push(O),w&&N.push(w),Array.prototype.splice.apply(r,N)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,i=0;r=a[i++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var i={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==i.type&&(i.attributes.spellcheck="true"),e.alias){var l="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(i.classes,l)}t.hooks.run("wrap",i);var s="";for(var o in i.attributes)s+=o+'="'+(i.attributes[o]||"")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'" '+s+">"+i.content+"</"+i.tag+">"},!self.document)return self.addEventListener?(self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code;self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r,t.languages[a])))),self.close()},!1),self.Prism):self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism);
+</script>
+<script type="text/javascript">
+Prism.languages.python={comment:{pattern:/(^|[^\\])#.*?(\r?\n|$)/,lookbehind:!0},string:/"""[\s\S]+?"""|'''[\s\S]+?'''|("|')(\\?.)*?\1/,"function":{pattern:/((^|\s)def[ \t]+)([a-zA-Z_][a-zA-Z0-9_]*(?=\())/g,lookbehind:!0},keyword:/\b(as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|pass|print|raise|return|try|while|with|yield)\b/,"boolean":/\b(True|False)\b/,number:/\b-?(0[bo])?(?:(\d|0x[a-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,operator:/[-+]|<=?|>=?|!|={1,2}|&{1,2}|\|?\||\?|\*|\/|~|\^|%|\b(or|and|not)\b/,punctuation:/[{}[\];(),.:]/};
+</script>
+<script type="text/x-mathjax-config">
+if (typeof MathJaxListener !== 'undefined') {
+  MathJax.Hub.Register.StartupHook('End', function () {
+    MathJaxListener.invokeCallbackForKey_('End');
+  });
+}
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
